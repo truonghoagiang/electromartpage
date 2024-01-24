@@ -8,6 +8,10 @@
  ul.cd-dropdown-content li {
    list-style-type: none;
  }
+ .cart-image {
+  width: 70px; /* Đặt kích thước mong muốn */
+  height: auto; /* Giữ tỷ lệ khung hình ảnh */
+}
 
  .cd-dropdown-trigger {
    display: block;

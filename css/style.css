@@ -3679,7 +3679,15 @@ ul.blog-cat li a span.fa {
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
 }
+.cart-image {
+    width: 100px; /* Đặt kích thước mong muốn */
+    height: auto; /* Giữ tỷ lệ khung hình ảnh */
+}
 
+.menudemo{
+    border: none;
+    background: white;
+}
 .popular-posts .post .text {
     position: relative;
     font-size: 16px;
