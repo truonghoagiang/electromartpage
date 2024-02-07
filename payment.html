@@ -684,16 +684,17 @@ RIGHT SIDEBAR TOGGLE SECTION
 					</button>
 				</div>
 				<div class="modal-body">
-					<form action="#" method="post">
+					<span style="color: red; font-size:12px ;" id="message1" class="text-center mt-2"></span>
+					<form id="login-form" action="#" method="post">
 						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Username" name="Name" required="">
+							<input id="user" type="text" class="form-control" placeholder="Username" name="Name" required="">
 						</div>
 						<div class="form-group">
-							<input type="password" class="form-control" placeholder="Password" name="Password"
+							<input id="pass" type="password" class="form-control" placeholder="Password" name="Password"
 								required="">
 						</div>
 						<div class="right-w3l">
-							<input type="submit" class="form-control" value="Log in">
+							<input id="btn-sign-in" type="submit" class="form-control" value="Log in">
 						</div>
 						<div class="sub-w3l">
 							<div class="custom-control custom-checkbox mr-sm-2">
@@ -735,26 +736,27 @@ RIGHT SIDEBAR TOGGLE SECTION
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title">Register</h5>
+					<p><h5 class="modal-title">Register</h5></p>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
+					<span aria-hidden="true">&times;</span>
 					</button>
 				</div>
 				<div class="modal-body">
-					<form action="#" method="post">
+					<span style="color: red; font-size:12px ;" id="message" class="text-center mt-2"></span>
+					<form id="register-form" action="#" method="post">
 						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Your Name" name="Name" required="">
+							<input id="name-register" type="text" class="form-control" placeholder="Your Name" name="Name" required="">
 						</div>
 						<div class="form-group">
-							<input type="email" class="form-control" placeholder="Email" name="Email" required="">
+							<input id="email-register" type="email" class="form-control" placeholder="Email" name="Email" required="">
 						</div>
 						<div class="form-group">
 							<input type="password" class="form-control" placeholder="Password" name="Password"
-								id="password1" required="">
+								id="password1-register" required="">
 						</div>
 						<div class="form-group">
 							<input type="password" class="form-control" placeholder="Confirm Password"
-								name="Confirm Password" id="password2" required="">
+								name="Confirm Password" id="password2-register" required="">
 						</div>
 						<div class="right-w3l">
 							<input type="submit" class="form-control" value="Register">
@@ -2054,6 +2056,9 @@ RIGHT SIDEBAR TOGGLE SECTION
 	<script src="js/bootstrap.min.js"></script>
 	<!-- //bootstrap-->
 	<!-- //Js scripts -->
+	<script src="js/login.js"></script>
+<script src="js/login2.js"></script>
+<script src="js/register.js"></script>
 
 <script>(function(){var js = "window['__CF$cv$params']={r:'843b058fead91fc2',t:'MTcwNDk1MzY4OS43OTQwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='../../../../../../cdn-cgi/challenge-platform/h/b/scripts/jsd/c8377512/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body>
 
